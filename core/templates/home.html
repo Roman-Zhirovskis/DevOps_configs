@@ -1,4 +1,7 @@
-<title> {{ title }} </title>
+<!-- <title> {{ title }} </title> -->
+<title> Women </title>
+
+<h1>Womens list: </h1>
 
 {% for women in womens %}
 <li>
@@ -14,13 +17,13 @@
     <br>
     <br>
     biography: {{women.content}}
-<li><a href="{{ women.get_absolute_url }}">Читать пост</a></li>
-<br>
-<br>
-<br>
-create time: {{women.time_create}}
-<h3>Women.html work</h3>
-<br>
-<br>
-<br>
-{% endfor %}
+
+    <br>
+    <br>
+    <br>
+    create time: {{women.time_create}}
+    <h3>Women.html work</h3>
+    <br>
+    <br>
+    <br>
+    {% endfor %}
