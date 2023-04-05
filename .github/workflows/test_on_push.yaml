@@ -14,5 +14,5 @@ jobs:
           architecture: 'x64'
       - name: Tests
         run: |
-          pip install pytest pytest-django
+          pip install -r requirements_git.txt
           pytest -v
