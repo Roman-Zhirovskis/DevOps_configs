@@ -13,4 +13,6 @@ jobs:
           python-version: 3.9
           architecture: 'x64'
       - name: Tests
-        run: pytest -v
+        run: 
+        pip install pytest pytest-django
+        pytest -v
