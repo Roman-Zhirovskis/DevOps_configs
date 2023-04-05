@@ -13,7 +13,7 @@ jobs:
           python-version: 3.9
           architecture: 'x64'
       - name: Install dependencies
-        run: pip install -r requirements_git.txt
+        run: pip install -r requirements.txt
 
       - name: flake8
         run: python -m flake8 --max-line-length=119 --ignore=E128,F401 core/*.py
