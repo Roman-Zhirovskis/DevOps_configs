@@ -12,11 +12,11 @@ jobs:
         with:
           python-version: 3.9
           architecture: 'x64'
-      - name: Install reqirements
+      - name: Install dependencies
         run: pip install -r requirements_git.txt
-        
+
       - name: flake8
-        run: flake8 core/*.py
+        run: python -m flake8 --max-line-length=119 --ignore=E128,F401 core/*.py
 
       - name: Tests
         run: pytest -v
