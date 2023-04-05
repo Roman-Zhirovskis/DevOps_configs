@@ -1,1 +1,7 @@
 Django
+pytest
+pytest-django
+black
+flake8
+mypy
+isort
