@@ -1,7 +1,4 @@
 import pytest
-from django.urls import reverse
-
-from core.models import Category, Women
 
 
 @pytest.mark.django_db
