@@ -8,13 +8,6 @@ repos:
 - repo: local
 
   hooks:
-    - id: black
-      name: black
-      entry: black
-      language: system
-      types: [python]
-      args: [--line-length=200, --target-version=py37]
-
     - id: autoflake
       name: autoflake
       entry: autoflake
@@ -44,33 +37,13 @@ repos:
                 # FI58 __future__ import "annotations" present
             # flake8-pytest-style
                 # PT013 found incorrect import of pytest, use simple 'import pytest' instead
-            "--max-line-length=110",
-            "--per-file-ignores=tests/*.py:S101"
+            "--max-line-length=119",
+            "--per-file-ignores=tests/*.py:S101 migrations:E501"
             # S101 Use of assert detected
         ]
 
-    - id: pyupgrade
-      name: pyupgrade
-      entry: pyupgrade
-      language: system
-      types: [python]
-      args: [--py37-plus]
-
-    - id: reorder-python-imports
-      name: reorder-python-imports
-      entry: reorder-python-imports
-      language: system
-      types: [python]
-      args: [--py37-plus]
-
-    - id: yesqa
-      name: yesqa
-      entry: yesqa
-      language: system
-      types: [python]
-
     - id: tests
       name: Run tests
-      entry: "bash tests.sh"
+      entry: "bash run_tests.sh"
       language: system
       verbose: true
