@@ -31,7 +31,7 @@ repos:
         args: [--line-length=119, --target-version=py37]
         exclude: venv/
 
-  - repo: 'https://gitlab.com/pycqa/flake8'
+  - repo: local
     rev: 3.8.2
     hooks:
       - id: flake8
