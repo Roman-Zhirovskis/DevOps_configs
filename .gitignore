@@ -138,3 +138,4 @@ setup.cfg
 staticfiles
 mediafiles
 client/node_modules
+run_tests

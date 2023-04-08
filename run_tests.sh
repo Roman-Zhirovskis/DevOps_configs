@@ -1,0 +1,1 @@
+source /home/roman/Desktop/django_ci/venv/bin/activate && python -m pytest -v tests

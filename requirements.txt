@@ -6,3 +6,5 @@ flake8
 mypy
 isort
 python-dotenv
+autoflake
+pre-commit
