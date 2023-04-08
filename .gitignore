@@ -139,3 +139,4 @@ staticfiles
 mediafiles
 client/node_modules
 run_tests
+pre-hook.txt
