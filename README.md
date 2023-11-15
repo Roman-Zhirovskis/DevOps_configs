@@ -1,3 +1,14 @@
-# trying to django_ci 
+# Devops, CI практики в для python проектов
 
-![action status](https://github.com/Roman-Zhirovskis/django_ci/actions/workflows/test_on_push.yaml/badge.svg)
+## Описание проекта:
+Данный проект содержит CI практики, которые используются при деплое проекта в удаленный репо ГитХаб
+
+## Проект содержит
+
+* pre-commit-hook файл для локальной проверки с помощью линтеров/тестирование
+* github action - конфиг для проверки при пулреквесте
+
+### TODO:
+* Добавить конфиг, который бы запускал pre-commit в github actions и разворачивал докер контейнер 
+
+
