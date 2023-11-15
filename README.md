@@ -7,7 +7,10 @@
 
 * pre-commit-hook файл для локальной проверки с помощью линтеров/тестирование
 * github action - конфиг для проверки при пулреквесте
-
+* Dockerfiles -  докер файлы с разлиными конфигами
+* docker-compose_files - docker-compose конфиги для разных сервисов
+* gidHub_action_with_docker - запуск тестов через докер при коммите в билде, также другой сетап github actions
+  
 ### TODO:
 * Добавить конфиг, который бы запускал pre-commit в github actions и разворачивал докер контейнер 
 
