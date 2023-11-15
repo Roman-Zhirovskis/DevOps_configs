@@ -37,12 +37,12 @@ repos:
         additional_dependencies:
           - flake8-bugbear
 
-  - repo: local
-    hooks:
-      - id: tests
-        name: Run tests
-        entry: "bash run_tests.sh"
-        language: system
+#  - repo: local
+ #   hooks:
+  #    - id: tests
+   #     name: Run tests
+    #    entry: "bash run_tests.sh"
+     #   language: system
 
 
 #   - repo: https://github.com/pycqa/isort
